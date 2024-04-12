@@ -95,7 +95,7 @@ traverse_and_search() {
         if [ -d "$item" ]; then
             # If it's a directory, call the function recursively
             traverse_and_search "$item"
-        elif [ -f "$item" ] && ([[ "$item" == *.swift ]] || [[ "$item" == *.m ]] || [[ "$item" == *.h ]] || [[ "$item" == *.c ]]); then
+        elif [ -f "$item" ] && ([[ "$item" == *.swift ]] || [[ "$item" == *.m ]] || [[ "$item" == *.h ]] || [[ "$item" == *.c ]] || [[ "$item" == *.cpp ]]); then
             # If it's a file with .swift extension, search for the strings
             search_in_swift_file "$item"
         fi
