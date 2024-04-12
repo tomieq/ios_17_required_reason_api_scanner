@@ -69,6 +69,7 @@ declare -a binaries
 search_binaries_with_directory app
 # Adds the (dynamic/static) .framework binaries
 search_binaries_with_directory framework
+search_binaries_with_directory xcframework
 # Adds the static libs .a binaries
 search_binaries_with_filename a
 
